@@ -1,6 +1,6 @@
 ---
 name: ios-accessibility-audit
-description: Audit iOS accessibility for React Native + Expo screens and flows. Use to check Dynamic Type, VoiceOver, touch targets, contrast, focus order, and reduced motion.
+description: Audit iOS accessibility for screens and flows. Use to check Dynamic Type, VoiceOver, touch targets, contrast, focus order, and reduced motion (platform guidance, not implementation).
 ---
 
 # iOS Accessibility Audit

@@ -1,6 +1,6 @@
 ---
 name: building-ui
-description: Complete guide for building beautiful apps with Expo Router. Covers fundamentals, styling, components, navigation, animations, patterns, and native tabs.
+description: Expo Router UI implementation guide. Use for Expo-specific components, navigation setup, native tabs, and implementation patterns.
 version: 1.0.0
 license: MIT
 ---
@@ -22,6 +22,11 @@ Consult these resources as needed:
 - ./references/media.md -- Media handling for Expo Router including camera, audio, video, and file saving
 - ./references/storage.md -- Data storage patterns including SQLite, AsyncStorage, and SecureStore
 - ./references/webgpu-three.md -- 3D graphics, games, and GPU-powered visualizations with WebGPU and Three.js
+
+## Scope
+
+- Use this skill for Expo Router implementation details and Expo-specific UI components.
+- For iOS UX rules, audits, and design guidance, use the `ios-*` skills.
 
 ## Running the App
 

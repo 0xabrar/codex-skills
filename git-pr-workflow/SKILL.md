@@ -1,6 +1,6 @@
 ---
 name: git-pr-workflow
-description: Git workflows for feature branches and GitHub CLI pull requests. Use when asked to manage branches, push to remotes, create PRs, or generate PR titles/descriptions, including multi-worktree setups.
+description: Git workflows for feature branches, merges, and PR creation with GitHub CLI. Use when asked to manage branches, sync with base, resolve conflicts, or create PRs.
 ---
 
 # Git PR Workflow
@@ -32,12 +32,33 @@ git push -u origin feat/short-description
 git push
 ```
 
-## PR creation (GitHub CLI)
+## Syncing with base
 
-Prereqs:
-- `gh --version`
-- `gh auth status` (or `gh auth login`)
-- Branch pushed to remote
+Rebase on the latest base branch to avoid conflicts:
+```
+git fetch origin
+git rebase origin/main
+```
+
+If rebase is not desired, merge instead:
+```
+git fetch origin
+git merge origin/main
+```
+
+## PR preparation
+
+1) Ensure branch is pushed:
+```
+git push -u origin feat/short-description
+```
+
+2) Confirm gh is authenticated:
+```
+gh auth status
+```
+
+## PR creation (GitHub CLI)
 
 Basic PR:
 ```
@@ -94,6 +115,6 @@ If working across multiple worktrees (e.g. `ansel-agent-a`, `ansel-agent-b`):
 - No commits to PR:
   - `git log main..HEAD`
   - `git status -sb`
-- GH auth issues:
-  - `gh auth status`
-  - `gh auth login`
+ - GH auth issues:
+   - `gh auth status`
+   - `gh auth login`

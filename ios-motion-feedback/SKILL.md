@@ -1,6 +1,6 @@
 ---
 name: ios-motion-feedback
-description: iOS motion and haptics guidance for React Native + Expo. Use when designing animations, transitions, or feedback states.
+description: iOS motion and haptics guidance. Use when designing animations, transitions, or feedback states (platform guidance, not implementation).
 ---
 
 # iOS Motion and Feedback

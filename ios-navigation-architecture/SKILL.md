@@ -1,6 +1,6 @@
 ---
 name: ios-navigation-architecture
-description: Choose and review iOS navigation patterns for React Native + Expo (tabs, stacks, modals, sheets, deep links). Use when designing app structure or refactoring navigation.
+description: Choose and review iOS navigation patterns (tabs, stacks, modals, sheets, deep links). Use when designing app structure or refactoring navigation (platform guidance, not implementation).
 ---
 
 # iOS Navigation Architecture

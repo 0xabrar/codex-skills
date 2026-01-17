@@ -1,6 +1,6 @@
 ---
 name: ios-hig-rn-basics
-description: Core iOS HIG guidance mapped to React Native + Expo. Use when designing or reviewing iOS UI/UX for layout, typography, color, spacing, controls, and iconography.
+description: Core iOS HIG guidance and design rules. Use when giving iOS UI/UX advice on layout, typography, color, spacing, controls, and iconography (not Expo Router implementation).
 ---
 
 # iOS HIG + RN/Expo Basics

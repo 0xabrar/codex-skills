@@ -1,36 +1,13 @@
 ---
 name: git-commit-workflow
-description: Git branch and commit workflow with conventional commits. Use when asked to create/switch branches, stage changes, write commit messages, or manage commits in multi-worktree setups.
+description: Git commit workflow with conventional commits and staging hygiene. Use when asked to stage changes, write commit messages, or manage commits in multi-worktree setups.
 ---
 
 # Git Commit Workflow
 
 ## Overview
 
-Standardize branch management and conventional commits. Favor minimal, clear steps and ask for missing details (base branch, scope, type) only when needed.
-
-## Branch workflow
-
-1) Sync base branch (usually main):
-```
-git checkout main
-git pull origin main
-```
-
-2) Create feature branch:
-```
-git checkout -b feat/short-description
-```
-
-3) Push with tracking on first push:
-```
-git push -u origin feat/short-description
-```
-
-4) Subsequent pushes:
-```
-git push
-```
+Standardize staging and conventional commits. Favor minimal, clear steps and ask for missing details (scope, type) only when needed.
 
 ## Conventional commits
 
@@ -65,8 +42,6 @@ If working across multiple worktrees (e.g. `ansel-agent-a`, `ansel-agent-b`):
 
 ## Troubleshooting
 
-- Branch not on remote:
-  - `git push -u origin <branch>`
 - No commits when expected:
   - `git status -sb`
-  - `git log main..HEAD`
+  - `git log --oneline -n 5`

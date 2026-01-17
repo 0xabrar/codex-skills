@@ -1,6 +1,6 @@
 ---
 name: ios-screen-review
-description: Structured UX/UI review checklist for iOS screens in React Native + Expo. Use to critique hierarchy, spacing, affordances, copy, and states and output prioritized fixes.
+description: Structured iOS UX/UI review checklist. Use to critique hierarchy, spacing, affordances, copy, and states and output prioritized fixes (platform guidance, not implementation).
 ---
 
 # iOS Screen Review
